@@ -11,6 +11,9 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css" />
 
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- My CSS -->
     <link rel="stylesheet" href="style.css" />
 
@@ -65,13 +68,13 @@
           </div>
         </div>
         <div class="row justify-content-center text-center">
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-up-right" data-aos-duration="1000">
             <p>
               Hi, I'm Ailsa Najlaa Satvika. I am currently on my 5th semester at BINUS University, majoring in Computer Science. Since middle school, I always thought that technology industry will keep evolving. I've always wanted to keep
               up with the current and future technology, which is why I'm really excited to learn more by doing internship. I believe I'm a fast learner and a highly motivated person.
             </p>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-up-left" data-aos-duration="1000" data-aos-delay="200">
             <p>
               I have earned many new skills throughout my studies, such as the basic of these programming language, C/Java/SQL/R and web programming including HTML/CSS/JavaScript/PHP. I also have learned using Adobe Photoshop, Adobe
               Animate, Adobe Premiere, and Figma. Besides all that, I'm good in communications and teamwork. I'm looking forward to earn more knowledge and skills in the future.
@@ -93,7 +96,7 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-md-4 mb-3">
-            <div class="card text-center" style="width: 18rem">
+            <div class="card text-center" data-aos="flip-down" data-aos-duration="500">
               <img src="img/ybike home resize 43.jpg" class="card-img-top" alt="Project1" />
               <div class="card-body">
                 <p class="card-text">Making the Front-end of YBIKE Website by using HTML, CSS, and JavaScript for Human and Computer Interaction Group Project</p>
@@ -101,7 +104,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card text-center" style="width: 18rem">
+            <div class="card text-center" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="100">
               <img src="img/DatelinePrototype-01 resize.jpg" class="card-img-top" alt="Project2" />
               <div class="card-body">
                 <p class="card-text">Designing the prototype of my group's application ideas, "Dateline" by using Figma to fulfill Software Engineering Project</p>
@@ -109,10 +112,10 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card text-center" style="width: 18rem">
+            <div class="card text-center" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="200">
               <img src="img/multimedia resize.jpg" class="card-img-top" alt="Project3" />
               <div class="card-body">
-                <p class="card-text">Making a Multimedia roject with the theme that we pick from the choice provided which is "Disnie" by using Adobe Animate</p>
+                <p class="card-text">Making a Multimedia Project with the theme that we pick from the choice provided which is "Disnie" by using Adobe Animate</p>
               </div>
             </div>
           </div>
@@ -184,6 +187,18 @@
     <!-- End Footer -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+
+    <script>
+      gsap.from(".jumbotron img", { duration: 1, y: -100, ease: "bounce" });
+      gsap.from(".display-6", { duration: 1, x: -50, opacity: 0, delay: 0.5, ease: "back" });
+    </script>
 
     <script>
       const scriptURL = "https://script.google.com/macros/s/AKfycbwa8-1pKvKy4wJw1hZ3hFtde70cJ8JhWHFidkONdiu6bDFJrTv9q_SgpcWSnIQOmlSChg/exec";
