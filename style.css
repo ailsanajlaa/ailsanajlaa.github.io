@@ -1,0 +1,34 @@
+.container-fluid {
+  padding-left: 30px;
+  padding-right: 50px;
+}
+
+.jumbotron {
+  padding-top: 6rem;
+  background-color: #e7e2f8;
+}
+
+/* svg {
+  padding-top: 0;
+} */
+
+#projects {
+  background-color: #e7e2f8;
+}
+
+footer {
+  padding-left: 30px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0;
+}
+
+.footer-right {
+  display: flex;
+  justify-content: space-evenly;
+  width: 10%;
+}
+
+section {
+  padding-top: 5rem;
+}
