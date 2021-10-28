@@ -48,6 +48,10 @@ body {
   background-color: #e7e2f8;
 }
 
+.jumbotron img {
+  margin-bottom: 20px;
+}
+
 /* svg {
   padding-top: 0;
 } */
